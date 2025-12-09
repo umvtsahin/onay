@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Önay Garden Residence — Modern & Lüks Yaşam</title>
+  <meta name="description" content="Önay Garden Residence — Modern, güvenli ve lüks yaşam alanları. Yüzme havuzu, fitness, peyzaj ve 7/24 güvenlik." />
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .hero-overlay {
+      pointer-events: none !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+    main { margin-top: 78px; }
+    .hero-cta-call {
+      display:flex; flex-direction:column; gap:10px; align-items:center;
+      position:relative;
+    }
+    .hero-cta-call a {
+      display:inline-block;
+      padding:12px 20px; border-radius:10px;
+      font-weight:600; text-decoration:none;
+      background: linear-gradient(90deg,#b8860b,#ffd27a);
+      color:#071033; box-shadow: 0 12px 30px rgba(184,134,11,0.12);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .hero-cta-call a:hover { transform:translateY(-4px); box-shadow: 0 18px 40px rgba(184,134,11,0.16); }
+    /* tooltip for PC */
+    .hero-cta-call span {
+      display:none; position:absolute; top:-45px; background:rgba(11,17,40,0.95);
+      color:#fff; padding:6px 12px; border-radius:8px; font-size:14px;
+      white-space:nowrap; box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    @media(min-width:769px){
+      .hero-cta-call span { display:block; opacity:0; transition:opacity .2s; pointer-events:none; }
+      .hero-cta-call a:hover + span { opacity:1; }
+    }
+
+    /* sosyal alan kart hover büyüme */
+    .grid-features .feature-card {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .grid-features .feature-card:hover {
+      transform: scale(1.06);
+      box-shadow: 0 20px 50px rgba(9,10,25,0.12);
+    }
+  </style>
+</head>
+<body class="home">
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Önay Garden Residence">Önay Garden</a>
+      <button class="hamburger" aria-controls="primary-menu" aria-expanded="false" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-menu" class="primary-menu" role="navigation" aria-label="Ana Menü">
+        <ul>
+          <li><a href="index.html" class="active">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkında</a></li>
+          <li><a href="social.html">Sosyal Alanlar</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-home" aria-hidden="false">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Önay Garden Residence</h1>
+        <p class="lead">Şehrin içinde, modern ve güvenli bir yaşam — ihtişamlı ortak alanlar ve konforlu detaylar ile aileler için ideal bir yer.</p>
+        <div class="hero-ctas hero-cta-call">
+          <a href="tel:+905550000000">Resepsiyonu Ara</a>
+          <span>+90 555 000 0000</span>
+          <a href="gallery.html" class="btn btn-outline">Galeriye Bak</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-features">
+      <div class="container grid-features">
+        <article class="feature-card">
+          <h3>Güvenlik & Denetim</h3>
+          <p>7/24 kameralar, kontrollü giriş ve profesyonel güvenlik ekibi ile daireniz güvende.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Sosyal ve Spor</h3>
+          <p>Yüzme havuzu, fitness salonu, sauna ve peyzajlı bahçeler ile yaşam alanınızı zenginleştiriyoruz.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Merkezi Konum</h3>
+          <p>Şehir içi ulaşım, alışveriş ve sosyal olanaklara kolay erişim sağlayan konumda.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-preview">
+      <div class="container preview-grid">
+        <div class="preview-text">
+          <h2>Yaşam Kalitenizi Yükseltin</h2>
+          <p>Önay Garden, konfor, güvenlik ve modern mimariyi bir araya getirerek sakinlerimiz için huzurlu bir yaşam alanı sunar. Ailenizle keyifli vakit geçirebileceğiniz sosyal alanlar ve estetik detaylarla dolu bir kompleks.</p>
+          <a href="contact.html" class="btn btn-primary">Bize Ulaş</a>
+        </div>
+        <div class="preview-images">
+          <img src="images/photo1.jpg" alt="Önay Garden iç mekan örneği">
+        </div>
+      </div>
+    </section>
+
+    <section class="section-map">
+      <div class="container">
+        <h2>Konum</h2>
+        <p>Önay Garden Residence — Cumhuriyet, 1979. Sk. No16, 34515 Esenyurt/İstanbul</p>
+        <div class="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.3935621103433!2d28.650282611996876!3d41.01664487122996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b55fda4b538e45%3A0xb9baa855004161ba!2s%C3%96nay%20Garden%20Residence!5e0!3m2!1str!2str!4v1765279300384!5m2!1str!2str"
+            width="100%"  
+            height="350"  
+            style="border:0; border-radius:10px;"  
+            allowfullscreen=""  
+            loading="lazy"  
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <p>Tel: +90 507 861 93 26<br>Adres: Cumhuriyet, 1979. Sk. No16, 34515 Esenyurt/İstanbul</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hızlı Linkler</h4>
+        <ul>
+          <li><a href="about.html">Hakkında</a></li>
+          <li><a href="gallery.html">Galeri</a></li>
+          <li><a href="social.html">Sosyal Alanlar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Sosyal</h4>
+        <p><a href="#" aria-label="Instagram">Instagram</a> • <a href="#" aria-label="Facebook">Facebook</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Önay Garden Residence — Tüm hakları saklıdır.
+    </div>
+  </footer>
+
+<script src="script/app.js" defer></script>
+</body>
+</html>
